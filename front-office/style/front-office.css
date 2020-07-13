@@ -1,0 +1,13 @@
+/*front.css*/
+header {
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+ h2 {
+     text-align: center;
+ }
