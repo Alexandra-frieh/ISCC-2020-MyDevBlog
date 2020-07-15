@@ -4,9 +4,8 @@
 <title>SILVER BLOG</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style/front-office.css">
-</head>
-<h1> Les Articles </h1>
 <?php
+
 session_start();
 
 function connect_to_database(){
@@ -25,24 +24,20 @@ function connect_to_database(){
         echo "Erreur : " . $e->getMessage();
     }
 } ?>
-<ul>
-<?php
-function articles($pdo){
-    $articles=$pdo->query("SELECT * FROM articles")->fetchAll();
 
-    foreach ($articles as $article){
-        echo '<h1><li>'.$article['Titre'].'</li></h1>';
-        echo '<p>'.$article['Extrait'].'</p>';
+<?php 
+function afficher_article_entier($pdo){
+    $number_article=$_GET['Numéro'];
 
-        $number_article=$article['Numéro'];
-    ?>
 
-    <a href="front.php?page=article&Numéro=<?php echo $number_article?>">Lire l'article en entier.</a>
-    <?php
-    }
+    $articles=$pdo->query("SELECT * FROM articles
+    WHERE Numéro='$number_article'")->fetchAll();
+
+    echo '<h1>'.$articles[0]['Titre'].'</h1>';
+    echo '<p>'.$articles[0]['Contenu'].'</p>';
 }
 $pdo=connect_to_database();
-articles($pdo);
+afficher_article_entier($pdo);
 ?>
-</ul>
+
 </html>

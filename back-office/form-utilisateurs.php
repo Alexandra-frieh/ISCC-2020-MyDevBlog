@@ -1,6 +1,5 @@
 
-<h1> Connexion </h1>
-<form method="POST" action="securite.php">
+<form method="POST" action="ajout-utilisateurs.php">
     <p>
         
                     <p>
@@ -11,7 +10,7 @@
                     </p>        
                         <div class="bouton">
                             <p>
-                        <button type="submit" value="Connexion">Connexion</button>
+                        <button type="submit" value="Créer">Créer</button>
                         </p>
                         </div>
                     

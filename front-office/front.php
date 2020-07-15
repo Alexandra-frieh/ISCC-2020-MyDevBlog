@@ -2,6 +2,7 @@
     <h1>SILVER BLOG</h1>
 
 </header>
+<link rel="stylesheet" href="./style/front-office.css">
 
 <body>
  
@@ -39,6 +40,9 @@
     }
     elseif ($_GET['page'] == 'articles') {
         include('page-articles.php');
+    }
+    elseif ($_GET['page'] == 'article'){
+        include('page-article-produits.php');
     }
     elseif ($_GET['page'] == 'contact') {
         include('page-contact.php');

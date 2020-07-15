@@ -16,7 +16,7 @@ function connect_to_database(){
     catch(PDOException $e){
         echo "Erreur : " . $e->getMessage();
     }
-}
+} 
 
 function login($pdo)
 {
@@ -38,7 +38,7 @@ function login($pdo)
                     echo '<br>';
                     echo 'Vous êtes connecté';
                     echo '<br>';
-                    echo '<a href="http://localhost:8888/ISCC%202020/ISCC-2020-MyDevBlog/back-office/back-office.html"> Espace administrateur</a>';
+                    echo '<a href="http://localhost:8888/ISCC%202020/ISCC-2020-MyDevBlog/back-office/back-office.php"> Espace administrateur</a>';
                 }
             }
             else{
