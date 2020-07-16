@@ -3,11 +3,12 @@
 <head>
 <title>SILVER BLOG</title>
 <meta charset="utf-8">
-
+<h1> SILVER BLOG </h1>
+<link rel="stylesheet" href="./front-office.css">
 </head>
 
 <header>
-    <h1> SILVER BLOG </h1>
+    
 
     <nav>
         <?php if($_GET['page'] == 'ajout utilisateurs') : ?>
