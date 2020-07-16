@@ -1,0 +1,30 @@
+/*front.css*/
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+
+ h2 {
+     text-align: center;
+     text-decoration: underline;
+     color: lightcoral;
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ footer {
+     text-align: center;
+ }
+body {
+     background-color: lavender;
+
+ }
+ h3  {
+     text-align: left;
+ }
